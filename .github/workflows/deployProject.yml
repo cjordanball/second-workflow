@@ -2,6 +2,7 @@ name: Deploy Project
 on: push
 jobs:
   test:
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Get code
